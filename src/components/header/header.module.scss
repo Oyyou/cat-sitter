@@ -1,0 +1,19 @@
+.headerContainer {
+    background-color: #F5F5DC;
+}
+
+.headerContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #36454F;
+    max-width: 1280px;
+    padding: 0 15px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}

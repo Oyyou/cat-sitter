@@ -1,0 +1,148 @@
+.contactContainer {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.fieldGroup {
+    display: flex;
+    flex-direction: column;
+
+    label {
+        font-weight: bold;
+    }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+
+    &:focus {
+        outline: none;
+        border-color: #007bff;
+        box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+    }
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: #0056b3;
+    }
+}
+
+.dateFieldsContainer {
+    display: flex;
+    align-items: flex-start;
+}
+
+.datesContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.contactFieldsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    div {
+        width: min-content;
+    }
+
+    .orText {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.dateInputContainer {
+    position: relative;
+
+    input[type="date"] {
+        padding: 5px;
+        width: calc(100% - 30px); // Adjust width to accommodate the remove button
+    }
+
+    .removeDateButton {
+        position: absolute;
+        user-select: none;
+        top: -10px;
+        right: 10px;
+        width: 20px;
+        height: 20px;
+        background-color: #ff0000;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    &:hover {
+        .removeDateButton {
+            opacity: 1;
+        }
+    }
+}
+
+
+
+.addButtonContainer {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.addButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+        background-color: #0056b3;
+    }
+}
+
+.errorText {
+    color: red;
+    font-size: 12px;
+}
