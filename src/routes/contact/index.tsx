@@ -115,7 +115,7 @@ const ContactPage = () => {
     return (
         <div className={styles.contactContainer}>
             <PageTitle title="CONTACT" />
-            <form onSubmit={onSubmit} name="contact" data-netlify="true" method="">
+            <form onSubmit={onSubmit} name="contact" data-netlify="true" method="POST">
                 <div className={styles.fieldGroup}>
                     <label htmlFor="name">Name:</label>
                     <input type="text" id="name" value={formState.name.value} onChange={onFieldChange} />
