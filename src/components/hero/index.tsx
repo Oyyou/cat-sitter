@@ -5,8 +5,21 @@ const Hero = ({ imgSrc }: { imgSrc: string }) => {
   const [height, setHeight] = useState(400);
 
   useEffect(() => {
-    setHeight(window.innerWidth * 0.37);
-  }, [window.innerWidth])
+    const updateHeight = () => {
+      setHeight(window.innerWidth * 0.37);
+    };
+
+    // Initial update
+    updateHeight();
+
+    // Attach event listener for window resize
+    window.addEventListener("resize", updateHeight);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", updateHeight);
+    };
+  }, [])
 
   return (
     <div className={styles.heroContainer} style={{ height }}>
