@@ -1,11 +1,10 @@
 import styles from "./hero.module.scss";
-import imgUrl from '/hero.png'
 
-const Hero = () => {
+const Hero = ({ imgSrc }: { imgSrc: string }) => {
 
   return (
     <div className={styles.heroContainer}>
-      <img src="/hero.jpg" />
+      <img src={imgSrc} alt="Cute cat" />
     </div>
   );
 };

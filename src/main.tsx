@@ -9,7 +9,7 @@ import {
   Root
 } from 'routes';
 
-import './index.css'
+import './index.scss'
 
 const router = createBrowserRouter([
   {

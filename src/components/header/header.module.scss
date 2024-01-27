@@ -1,13 +1,23 @@
+@import 'src/styles/_variables.scss';
+
 .headerContainer {
-    background-color: #F5F5DC;
+    background-color: $color-background;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    transition: top 0.3s
+}
+
+.headerHidden {
+    top: -100%;
 }
 
 .headerContent {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    color: #36454F;
     max-width: 1280px;
+    margin: 0 auto;
     padding: 0 15px;
 }
 
@@ -16,4 +26,15 @@ nav {
     flex-direction: row;
     gap: 15px;
     align-items: center;
+}
+
+.link {
+    color: $color-text;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+        color: $color-secondary;
+        text-decoration: underline;
+    }
 }

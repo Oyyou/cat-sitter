@@ -1,12 +1,15 @@
 import { Outlet } from "react-router-dom";
 import { Layout } from "components";
+import { HelmetProvider } from "react-helmet-async";
 
 const Root = () => {
 
   return (
-    <Layout>
-      <Outlet />
-    </Layout>
+    <HelmetProvider>
+      <Layout>
+        <Outlet />
+      </Layout>
+    </HelmetProvider>
   );
 };
 
