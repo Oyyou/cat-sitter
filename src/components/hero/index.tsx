@@ -6,7 +6,7 @@ const Hero = ({ imgSrc }: { imgSrc: string }) => {
 
   useEffect(() => {
     setHeight(window.innerWidth * 0.37);
-  }, [])
+  }, [window.innerWidth])
 
   return (
     <div className={styles.heroContainer} style={{ height }}>
