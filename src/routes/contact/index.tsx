@@ -32,7 +32,7 @@ const ContactPage = () => {
     })
 
     const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
+        // e.preventDefault();
         const {
             name,
             phoneNumber,
