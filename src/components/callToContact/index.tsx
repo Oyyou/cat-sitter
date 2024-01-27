@@ -1,4 +1,4 @@
-import styles from "./CallToContact.module.scss";
+import styles from "./callToContact.module.scss";
 
 const CallToContact = () => {
 
