@@ -1,7 +1,7 @@
-import react from '@vitejs/plugin-react-swc'
-import Pages from 'vite-plugin-pages'
-import generateSitemap from 'vite-plugin-pages-sitemap'
-import path from 'path';
+import react from "@vitejs/plugin-react-swc";
+import Pages from "vite-plugin-pages";
+import generateSitemap from "vite-plugin-pages-sitemap";
+import path from "path";
 
 // https://vitejs.dev/config/
 export default {

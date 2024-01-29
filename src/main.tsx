@@ -1,15 +1,15 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import {
   AboutPage,
   ContactPage,
   HomePage,
   RatesPage,
   Root
-} from 'routes';
+} from "routes";
 
-import './index.scss'
+import "./index.scss";
 
 const router = createBrowserRouter([
   {
