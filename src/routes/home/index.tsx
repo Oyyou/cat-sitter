@@ -1,6 +1,5 @@
-import { CallToContact, Hero, Reviews } from "components";
+import { CallToContact, Hero, Reviews, SiteHelmet } from "components";
 import styles from "./home.module.scss";
-import SiteHelmet from "routes/siteHelmet";
 
 const HomePage = () => {
 

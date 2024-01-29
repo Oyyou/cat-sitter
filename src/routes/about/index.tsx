@@ -1,7 +1,5 @@
-import { Helmet } from 'react-helmet';
-import { CallToContact, Hero, PageTitle } from "components";
+import { CallToContact, Hero, PageTitle, SiteHelmet } from "components";
 import styles from "./about.module.scss";
-import SiteHelmet from 'routes/siteHelmet';
 
 const AboutPage = () => {
 
